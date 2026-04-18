@@ -6,7 +6,6 @@ csv_path = r"C:\Users\askg0\Downloads\歷史地震_639116959772736083.csv"
 try:
    df = pd.read_csv(csv_path, encoding="big5")
 except FileNotFoundError:
-   print(f"找不到 CSV 檔案，請確認路徑: {csv_path}")
    df = pd.DataFrame()
 
 
